@@ -20,9 +20,9 @@ In the next lessons, we'll start to explore the first half of this
 request/response cycle — initiating requests from the frontend. Before we start
 practicing in JavaScript, though, it would be helpful if we could explore how
 this cycle works. Luckily, we have some tools that can mimic both frontend
-requests and backend responses. For the frontend, we have [Postman][postman], an
+requests and backend responses. For the frontend, we have [Postman], an
 app that can be used to build requests without writing code. For the backend, we
-have [JSON Server][json server], a Node application that mimics the behavior of
+have [JSON Server], a Node application that mimics the behavior of
 a full backend server.
 
 Combined, we can practice sending requests from Postman to the JSON server and
@@ -103,9 +103,6 @@ be added as a dependency in the file.
 > [this gist][live-server settings] (you'll only need to do this once), then
 > come back to this lesson.
 
-[live-server]: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
-[live-server settings]: https://gist.github.com/ihollander/cc5f36c6447d15dea6a16f68d82aacf7
-
 Next, we'll need to create a file that will act as our data storage.
 
 ```console
@@ -172,7 +169,7 @@ value associated with `articles` in our data, an array containing two objects:
 ```
 
 > **Note**: It's recommended that you use a browser extension such as
-> [JSON Viewer][json viewer] to format the JSON string in the browser.
+> [JSON Viewer] to format the JSON string in the browser.
 
 We can go even further — notice the `"id"` key that is listed. Instead of just
 going to `/articles`, we can append the value of `"id"` to the end of the URL:
@@ -355,11 +352,13 @@ With JSON Server, you'll now be able to design frontends that persist data!
 
 ## Resources
 
-- [JSON Server][json server]
-- [Postman][postman]
+- [JSON Server]
+- [Postman]
 - [HTTP Status Codes][status]
 - [Representational State Transfer (REST)][rest]
 
+[live-server]: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+[live-server settings]: https://gist.github.com/ihollander/cc5f36c6447d15dea6a16f68d82aacf7
 [rest]: https://en.wikipedia.org/wiki/Representational_state_transfer
 [json server]: https://www.npmjs.com/package/json-server
 [status]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
